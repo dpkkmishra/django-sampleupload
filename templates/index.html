@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<h1>Somethign</h1>
+
+<form action="/create_post/" method='POST'>
+	{% csrf_token %}
+
+	<input type="text" id="id_title" name="title"/>
+
+	<input type="text" id="id_desc" name="desc"/>
+
+	<input type="text" id="id_storyTitle" name="storyTitle"/>
+
+	<input type="text" id="id_storyDesc" name="storyDesc"/>
+
+	<input type="submit" value="POST"/>
+
+</form>
